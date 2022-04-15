@@ -11,6 +11,7 @@ export const Container = styled.header`
     position: fixed;
     top: 0;
     z-index: 10;
+    transition: top 0.2s;
 `
 
 export const Logo = styled.div`

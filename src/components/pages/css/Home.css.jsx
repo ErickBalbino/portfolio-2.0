@@ -59,12 +59,19 @@ export const Image = styled.div`
 
 export const Projects = styled.div`
     background-color: #050606;
-    padding: 0 0px 60px 40px;
+    padding-bottom: 60px;
 
     h1{
         color: #e5e5e5;
         font-size: 2.5rem;
         font-weight: 400;
-        padding-bottom: 20px;
+        padding: 0px 0px 20px 40px;
     }
+`
+
+export const ProjectsWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
 `

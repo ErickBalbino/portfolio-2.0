@@ -20,10 +20,45 @@ export default function Home() {
         </styles.Image>
       </styles.Introduction>
 
-      <styles.Projects>
+      <styles.Projects id='projetos'>
         <h1>Projetos</h1>
 
-        <ProjectCard srcImage='jogo-da-velha.jpeg' text='Jogo da velha desenvolvido pela linguagem JavaScript!' />
+        <styles.ProjectsWrapper>
+          <ProjectCard
+            srcImage='jogo-da-velha.jpeg'
+            text='Jogo da velha desenvolvido pela linguagem JavaScript!'
+            link='https://erickbalbino.github.io/jogo-da-velha'
+          />
+
+          <ProjectCard
+            srcImage='arkkio.jpeg'
+            text='Loja online desenvolvido com HTML, CSS e JavaScript!'
+            link='https://erickbalbino.github.io/loja-arkkio'
+          />
+
+          <ProjectCard
+            srcImage='historiando.jpeg'
+            text='Site de história criado com HTML, CSS e JavaScript!'
+            link='https://erickbalbino.github.io/historiando'
+          />
+
+          <ProjectCard
+            srcImage='adocao_pet.png'
+            text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
+            link='#'
+          />
+
+          <ProjectCard
+            srcImage='bloco-de-notas.jpeg'
+            text='Bloco de notas desenvolvido com React, HTML e CSS'
+            link='#'
+          />
+
+          <ProjectCard
+            srcImage='web-whatsapp.jpeg'
+            text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
+          />
+        </styles.ProjectsWrapper>
       </styles.Projects>
     </styles.Container>
   )

@@ -1,32 +1,37 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 23vw;
-    height: 350px;
+    width: 28vw;
+    height: 380px;
     background-image: ${props => `url('assets/images/${props.bgImage}')`};
     background-size: cover;
-    background-position: center;
+    background-position-y: top;
+    background-position-x: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
     border-radius: 10px;
     border: 2px solid #02C5DF;
+    margin-bottom: 50px;
 
-
-    p{
-        color: #e5e5e5;
+    .link__container{
         background-color: #3d3d3d;
         padding: 10px;
-        transition: 0.5s ease-in-out height;
+        width: 100%;
+
+        p{
+            color: #e5e5e5;
+        }
     }
 
     &:hover{
-        p{
+        .link__container{
             display: flex;
             align-items: center;
             height: 100%;
             text-align: center;
             cursor: pointer;
+            font-size: 1.1rem;
         }
     }
 `
