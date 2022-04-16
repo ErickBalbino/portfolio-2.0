@@ -18,6 +18,7 @@ export const Container = styled.div`
         background-color: #3d3d3d;
         padding: 10px;
         width: 100%;
+        transition: 0.2s ease-in-out background-color;
 
         p{
             color: #e5e5e5;
@@ -32,6 +33,7 @@ export const Container = styled.div`
             text-align: center;
             cursor: pointer;
             font-size: 1.1rem;
+            background-color: #3d3d3dd6;
         }
     }
 `
