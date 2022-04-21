@@ -36,4 +36,11 @@ export const Container = styled.div`
             background-color: #3d3d3dd6;
         }
     }
+
+    @media (max-width: 768px) {
+        &{
+            width: 80vw;
+            height: 340px;
+        }
+    }
 `

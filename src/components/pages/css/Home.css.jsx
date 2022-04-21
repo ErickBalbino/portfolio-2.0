@@ -10,6 +10,16 @@ export const Introduction = styled.div`
     align-items: center;
     height: 100vh;
     padding-top: 50px;
+
+    @media (max-width: 768px) {
+        &{
+            height: auto;
+            padding: 150px 0px 80px 0px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -51,10 +61,28 @@ export const TextWrapper = styled.div`
             }
         }
     }
+
+    @media(max-width: 768px){
+        &{
+            width: 92vw;
+        }
+    }
 `
 
 export const Image = styled.div`
     width: 50vw;
+
+    @media (max-width: 768px) {
+        &{
+            display: flex;
+            align-items: center;
+            width: 92vw;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
 `
 
 export const Projects = styled.div`
@@ -66,6 +94,10 @@ export const Projects = styled.div`
         font-size: 2.5rem;
         font-weight: 400;
         padding: 0px 0px 20px 40px;
+
+        @media (max-width: 768px) {
+            padding: 0px 0px 20px 15px;
+        }
     }
 `
 
@@ -74,6 +106,9 @@ export const ProjectsWrapper = styled.div`
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
 
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const Technologies = styled(Projects)`
@@ -196,6 +231,15 @@ export const TechnologiesContainer = styled.div`
                 margin-right: 3px;
             }
         }
+
+        @media (max-width: 768px) {
+            width: 95vw;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1 , 1fr);
     }
 `
 
