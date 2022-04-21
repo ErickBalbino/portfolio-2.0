@@ -18,31 +18,31 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <HashLink smooth to='/#projetos' className='item__list'>
+                        <HashLink smooth to='/#projetos' className='item__list list__blue'>
                             Projetos
                         </HashLink>
                     </li>
 
                     <li>
-                        <HashLink smooth to='/#tecnologias' className='item__list'>
+                        <HashLink smooth to='/#tecnologias' className='item__list list__blue'>
                             Tecnologias
                         </HashLink>
                     </li>
 
                     <li>
-                        <HashLink smooth to='/#sobre' className='item__list'>
+                        <HashLink smooth to='/#sobre' className='item__list list__blue'>
                             Sobre Mim
                         </HashLink>
                     </li>
 
                     <li>
-                        <HashLink smooth to='/#curriculo' className='item__list'>
+                        <HashLink smooth to='/#curriculo' className='item__list list__blue'>
                             Curriculo
                         </HashLink>
                     </li>
 
                     <li>
-                        <HashLink smooth to='/#contato' className='item__list' id='contato'>
+                        <HashLink smooth to='/#contato' className='item__list' id='button__contato'>
                             Contato
                         </HashLink>
                     </li>

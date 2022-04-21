@@ -34,15 +34,48 @@ export const Menu = styled.div`
                 .item__list{
                     color: #eee;
                     font-size: 1.05rem;
+                    position: relative;
+                    padding: 5px 0;
+
+                    
                 }
 
-                #contato{
+                #button__contato{
                     background-color: #fff;
                     color: #000;
                     padding: 8px 20px;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-weight: 500;
                     background-color: 4px 4px 8px #00000097;
+                    border: 2px solid transparent;
+                    transition: 0.2s ease-in-out background-color;
+
+                    &:hover{
+                        background-color: #000;
+                        color: #fff;
+                        border: 2px solid #fff;
+                    }
+                }
+
+                .list__blue::after{
+                    content: "";
+                    height: 2px;
+                    background-color: #02C5DF;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    transform: scaleX(0);
+                    transform-origin: left center;
+                    transition: all ease-in-out 0.25s;
+                }
+
+                &:hover{
+                    .list__blue::after{
+                        opacity: 1;
+                        transform: scaleX(1);
+                    }
                 }
             }
         }

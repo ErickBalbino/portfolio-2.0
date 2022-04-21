@@ -218,6 +218,7 @@ export const SobreContainer = styled.div`
         align-items: center;
         border-bottom: 6px solid #02C5DF;
         border-right: 6px solid #02C5DF;
+        border-radius: 6px;
         padding: 30px 0;
 
         h3{
@@ -240,7 +241,7 @@ export const SobreContainer = styled.div`
 
         p{
             font-size: 1.1rem;
-            line-height: 1.5;
+            line-height: 1.7;
             color: #ccc;
             padding-left: 60px;
 
@@ -300,5 +301,104 @@ export const CurriculoContainer = styled.div`
     #zip{
         background-color: #BB7802;
         border-bottom: 5px solid #dd8d02;
+    }
+`
+
+export const FormContainer = styled.div`
+    background-color: #050606;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 12px #00000076;
+
+    .formWrapper__container{
+        width: 85vw;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #161616;
+
+        form{
+            border-radius: 10px;
+            width: 43vw;
+            padding: 20px 15px;
+
+            h2{
+                color: #e5e5e5;
+                text-align: center;
+            }
+
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: transparent;
+                outline: transparent;
+
+                input,
+                textarea{
+                    width: 80%;
+                    border: 1px solid #02C5DF;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    background-color: #161616;
+                    margin-bottom: 20px;
+                    outline: transparent;
+                    caret-color: #02C5DF;
+                    color: #02C5DF;
+                }
+
+                input::placeholder,
+                textarea::placeholder{
+                    color: #02C5DF;
+                }
+
+                input{
+                    height: 55px;
+                    padding: 0 10px;
+                }
+
+                textarea{
+                    height: 120px;
+                    resize: none;
+                    padding: 10px;
+                }
+            }
+
+            .button__container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 15px;
+
+                input[type='submit']{
+                    background-color: #02C5DF;
+                    color: #222;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    outline: transparent;
+                    border: transparent;
+                    transition: 0.2s ease-in-out background-color;
+
+                    &:hover{
+                        background-color: #02a8be;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .formImagem__container{
+            width: 42vw;
+            height: 100%;
+            background-image: url('/assets/images/contato.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 `

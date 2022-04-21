@@ -62,7 +62,7 @@ export default function Home() {
         </styles.ProjectsWrapper>
       </styles.Projects>
 
-      <styles.Technologies>
+      <styles.Technologies id='tecnologias'>
         <h1>Tecnologias</h1>
 
         <styles.TechnologiesContainer>
@@ -181,7 +181,7 @@ export default function Home() {
         </styles.TechnologiesContainer>
       </styles.Technologies>
 
-      <styles.Sobre>
+      <styles.Sobre id='sobre'>
         <h1>Sobre</h1>
 
         <styles.SobreContainer>
@@ -199,7 +199,7 @@ export default function Home() {
         </styles.SobreContainer>
       </styles.Sobre>
 
-      <styles.Curriculo>
+      <styles.Curriculo id='curriculo'>
         <h1>Currículo</h1>
 
         <styles.CurriculoContainer>
@@ -212,6 +212,46 @@ export default function Home() {
           </a>
         </styles.CurriculoContainer>
       </styles.Curriculo>
+
+      <styles.FormContainer id='contato'>
+        <div className='formWrapper__container'>
+          <form action="">
+            <fieldset>
+              <input
+                type="text"
+                name='nome'
+                id='nome'
+                placeholder='Insira seu nome'
+              />
+              <input
+                type="email"
+                name='email'
+                id='email'
+                placeholder='Insira seu e-mail'
+              />
+              <input
+                type="text"
+                name='assunto'
+                id='assunto'
+                placeholder='Assunto da mensagem'
+              />
+              <textarea
+                name="messagem"
+                id="messagem"
+                placeholder='Digite a mensagem...'
+              />
+            </fieldset>
+
+            <div className='button__container'>
+              <input type="submit" value="Enviar Mensagem" />
+            </div>
+          </form>
+
+          <div className='formImagem__container'>
+
+          </div>
+        </div>
+      </styles.FormContainer>
     </styles.Container>
   )
 }

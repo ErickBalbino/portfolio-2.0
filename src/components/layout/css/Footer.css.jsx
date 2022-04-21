@@ -10,12 +10,10 @@ export const Container = styled.div`
 
 export const IconsContainer = styled.div`
     .icon{
-        font-size: 3rem;
+        font-size: 2.8rem;
         margin: 0 10px;
-        padding: 5px;
-        background-color: #ccc;
-        fill: #1d1d1d;
-        border-radius: 50%;
+        fill: #4d4d4d;
+        border-radius: 20%;
         transition: 0.2s ease-in-out background-color;
 
         &:hover{
