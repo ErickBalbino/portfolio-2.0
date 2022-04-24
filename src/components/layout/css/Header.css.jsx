@@ -12,6 +12,10 @@ export const Container = styled.header`
     top: 0;
     z-index: 10;
     transition: top 0.2s;
+
+    @media (max-width: 768px) {
+        padding: 10px 30px;
+    }
 `
 
 export const Logo = styled.div`
@@ -85,5 +89,88 @@ export const Menu = styled.div`
         &{
             display: none;
         }
+    }
+`
+
+export const Sidebar = styled.div`
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center; 
+
+        .icon__menu{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #ccc;
+        }
+    }
+`
+
+export const SidebarContainer = styled.div`
+    position: fixed;
+    background-color: #121212;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.5s;
+    transform: translate(0, -100%);
+
+    nav{
+        padding-top: 20px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                color: #e5e5e5;
+                margin: 10px 0;
+                font-size: 1.15rem;
+            }
+            
+            #button__contato{
+                background-color: #fff;
+                color: #000;
+                padding: 8px 30px;
+                border-radius: 5px;
+                font-weight: 500;
+                background-color: 4px 4px 8px #00000097;
+                border: 2px solid transparent;
+                transition: 0.2s ease-in-out background-color;
+                display: flex;  
+                align-items: center;
+
+                .icone__celular{
+                    margin-left: 5px;
+                }
+
+                &:hover{
+                    background-color: #000;
+                    color: #fff;
+                    border: 2px solid #fff;
+                }
+            }
+        }
+    }
+`
+
+export const SidebarHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    padding: 0 30px;
+
+    img{
+        width: 80px;
+    }
+
+    .icon__minimize {
+        color: #a71212;
+        font-size: 1.3rem;
     }
 `

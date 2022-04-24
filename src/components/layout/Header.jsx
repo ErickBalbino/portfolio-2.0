@@ -1,8 +1,18 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link/dist/react-router-hash-link.cjs.development'
+import { HashLink } from 'react-router-hash-link'
 import * as styles from './css/Header.css.jsx'
+import { FaMobile, FaMobileAlt, FaRegWindowClose, FaSlidersH } from 'react-icons/fa'
 
 export default function Header() {
+
+  const openMenu = () => {
+    document.getElementById('sidebar').style.transform = 'translate(0, 1%)'
+  }
+
+  const closeMenu = () => {
+    document.getElementById('sidebar').style.transform = 'translate(0, -100%)'
+  }
+
   return (
     <styles.Container id='header'>
         <styles.Logo>
@@ -49,6 +59,45 @@ export default function Header() {
                 </ul>
             </nav>
         </styles.Menu>
+
+        <styles.Sidebar>
+            <FaSlidersH className='icon__menu' onClick={openMenu} />
+
+            <styles.SidebarContainer id='sidebar'>
+                <styles.SidebarHeader>
+                    <img src="/assets/images/logo.png" alt="logo portfolio erick balbino" />
+
+                    <FaRegWindowClose className='icon__minimize' onClick={closeMenu} />    
+                </styles.SidebarHeader>
+
+                <nav>
+                    <ul>
+                        <HashLink smooth to='/#projetos' onClick={closeMenu}>
+                            <li>Projetos</li>
+                        </HashLink>
+
+                        <HashLink smooth to='/#tecnologias' onClick={closeMenu}>
+                            <li>Tecnologias</li>
+                        </HashLink>
+
+                        <HashLink smooth to='/#sobre' onClick={closeMenu}>
+                            <li>Sobre mim</li>
+                        </HashLink>
+
+                        <HashLink smooth to='/#curriculo' onClick={closeMenu}>
+                            <li>Curriculo</li>
+                        </HashLink>
+
+                        <HashLink smooth to='/#contato' onClick={closeMenu}>
+                            <li id='button__contato'>
+                                Contato
+                                <FaMobileAlt className='icone__celular' />
+                            </li> 
+                        </HashLink>
+                    </ul>
+                </nav>
+            </styles.SidebarContainer>
+        </styles.Sidebar>
     </styles.Container>
   )
 }

@@ -43,4 +43,24 @@ export const Container = styled.div`
             height: 340px;
         }
     }
+
+    @media (max-height: 500px){
+        width: 40vw;
+    }
+
+    @media (min-width: 1400px) {
+        &{
+            height: 420px;
+        }
+    }
+
+    @media (min-width: 1700px) {
+        &{
+            height: 500px;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1150px){
+        width: 40vw;
+    }
 `

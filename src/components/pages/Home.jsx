@@ -1,6 +1,7 @@
 import React from 'react'
 import * as styles from './css/Home.css.jsx'
 import { FaFilePdf, FaFileArchive } from 'react-icons/fa'
+import Fade from 'react-reveal/Fade'
 
 import ProjectCard from '../project/ProjectCard'
 
@@ -8,177 +9,155 @@ export default function Home() {
   return (
     <styles.Container>
       <styles.Introduction>
-        <styles.TextWrapper>
-          <h1>Welcome to my world!</h1>
+        <Fade left duration={1500}>
+          <styles.TextWrapper>
+            <h1>Welcome to my world!</h1>
 
-          <p>
-            Olá, meu nome é Erick, sou desenvolvedor front-end, esse é meu portfólio, seja bem-vindo <span id='underline'>_</span>
-          </p>
-        </styles.TextWrapper>
+            <Fade bottom delay={1500} duration={2000}>
+              <p>
+                Olá, meu nome é Erick, sou desenvolvedor front-end, esse é meu portfólio, seja bem-vindo <span id='underline'>_</span>
+              </p>
+            </Fade>
+          </styles.TextWrapper>
+        </Fade>
 
         <styles.Image>
-          <img src='/assets/images/desenvolvedor.png' alt='imagem de um desenvolvedor codando' />
+          <img src='/assets/images/desenvolvedor.png' alt='imagem de um desenvolvedor codando' id='coder' />
         </styles.Image>
       </styles.Introduction>
 
       <styles.Projects id='projetos'>
         <h1>Projetos</h1>
 
-        <styles.ProjectsWrapper>
-          <ProjectCard
-            srcImage='jogo-da-velha.jpeg'
-            text='Jogo da velha desenvolvido pela linguagem JavaScript!'
-            link='https://erickbalbino.github.io/jogo-da-velha'
-          />
-
-          <ProjectCard
-            srcImage='arkkio.jpeg'
-            text='Loja online desenvolvido com HTML, CSS e JavaScript!'
-            link='https://erickbalbino.github.io/loja-arkkio'
-          />
-
-          <ProjectCard
-            srcImage='historiando.jpeg'
-            text='Site de história criado com HTML, CSS e JavaScript!'
-            link='https://erickbalbino.github.io/historiando'
-          />
-
-          <ProjectCard
-            srcImage='adocao_pet.png'
-            text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
-            link='#'
-          />
-
-          <ProjectCard
-            srcImage='bloco-de-notas.jpeg'
-            text='Bloco de notas desenvolvido com React, HTML e CSS'
-            link='#'
-          />
-
-          <ProjectCard
-            srcImage='web-whatsapp.jpeg'
-            text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
-          />
-        </styles.ProjectsWrapper>
+        <Fade right duration={1500}>
+          <styles.ProjectsWrapper>
+            <ProjectCard
+              srcImage='jogo-da-velha.jpeg'
+              text='Jogo da velha desenvolvido pela linguagem JavaScript!'
+              link='https://erickbalbino.github.io/jogo-da-velha'
+            />
+            <ProjectCard
+              srcImage='arkkio.jpeg'
+              text='Loja online desenvolvido com HTML, CSS e JavaScript!'
+              link='https://erickbalbino.github.io/loja-arkkio'
+            />
+            <ProjectCard
+              srcImage='historiando.jpeg'
+              text='Site de história criado com HTML, CSS e JavaScript!'
+              link='https://erickbalbino.github.io/historiando'
+            />
+            <ProjectCard
+              srcImage='adocao_pet.png'
+              text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
+              link='#'
+            />
+            <ProjectCard
+              srcImage='bloco-de-notas.jpeg'
+              text='Bloco de notas desenvolvido com React, HTML e CSS'
+              link='#'
+            />
+            <ProjectCard
+              srcImage='web-whatsapp.jpeg'
+              text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
+            />
+          </styles.ProjectsWrapper>
+        </Fade>
       </styles.Projects>
 
       <styles.Technologies id='tecnologias'>
         <h1>Tecnologias</h1>
 
-        <styles.TechnologiesContainer>
-          <div className='tecnologias__container__tecnologia'>
-            <h3>Front-End</h3>
-
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>HTML5</span>
+        <Fade left duration={1500}>
+          <styles.TechnologiesContainer>
+            <div className='tecnologias__container__tecnologia'>
+              <h3>Front-End</h3>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>HTML5</span>
+                </div>
+                <img src='/assets/images/html5.png' alt='icone html5' />
               </div>
-
-              <img src='/assets/images/html5.png' alt='icone html5' />
-            </div>
-
-            <div className='tecnologia__reverse'>
-              <div className='linha__azul__reverse'>
-                <span>CSS3</span>
+              <div className='tecnologia__reverse'>
+                <div className='linha__azul__reverse'>
+                  <span>CSS3</span>
+                </div>
+                <img src='/assets/images/css3.png' alt='icone css3' />
               </div>
-
-              <img src='/assets/images/css3.png' alt='icone css3' />
-            </div>
-
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>JavaScript</span>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>JavaScript</span>
+                </div>
+                <img src='/assets/images/javascript.jpg' alt='icone javascript' />
               </div>
-
-              <img src='/assets/images/javascript.jpg' alt='icone javascript' />
-            </div>
-
-            <div className='tecnologia__reverse'>
-              <div className='linha__azul__reverse'>
-                <span>Bootstrap</span>
+              <div className='tecnologia__reverse'>
+                <div className='linha__azul__reverse'>
+                  <span>Bootstrap</span>
+                </div>
+                <img src='/assets/images/bootstrap.png' alt='icone bootstrap' id='bootstrap' />
               </div>
-
-              <img src='/assets/images/bootstrap.png' alt='icone bootstrap' id='bootstrap' />
-            </div>
-
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>React</span>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>React</span>
+                </div>
+                <img src='/assets/images/react.png' alt='icone react' />
               </div>
-
-              <img src='/assets/images/react.png' alt='icone react' />
             </div>
-          </div>
-
-          <div className='tecnologias__container__tecnologia'>
-            <h3>Back-End/Banco de Dados</h3>
-
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>Python</span>
+            <div className='tecnologias__container__tecnologia'>
+              <h3>Back-End/Banco de Dados</h3>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>Python</span>
+                </div>
+                <img src='/assets/images/python.png' alt='icone python3' id='python' />
               </div>
-
-              <img src='/assets/images/python.png' alt='icone python3' id='python' />
-            </div>
-
-            <div className='tecnologia__reverse'>
-              <div className='linha__azul__reverse'>
-                <span>PHP</span>
+              <div className='tecnologia__reverse'>
+                <div className='linha__azul__reverse'>
+                  <span>PHP</span>
+                </div>
+                <img src='/assets/images/php.png' alt='icone php' id='php' />
               </div>
-
-              <img src='/assets/images/php.png' alt='icone php' id='php' />
-            </div>
-
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>MySQL</span>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>MySQL</span>
+                </div>
+                <img src='/assets/images/mysql.png' alt='icone mysql' id='mysql' />
               </div>
-
-              <img src='/assets/images/mysql.png' alt='icone mysql' id='mysql' />
-            </div>
-
-            <div className='tecnologia__reverse'>
-              <div className='linha__azul__reverse'>
-                <span>PostgreSQL</span>
+              <div className='tecnologia__reverse'>
+                <div className='linha__azul__reverse'>
+                  <span>PostgreSQL</span>
+                </div>
+                <img src='/assets/images/postgreSQL.png' alt='icone postgreSQL' id='postgresql' />
               </div>
-
-              <img src='/assets/images/postgreSQL.png' alt='icone postgreSQL' id='postgresql' />
             </div>
-          </div>
-
-          <div className='tecnologias__container__tecnologia'>
-            <h3>Outras Tecnologias</h3>
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>Git</span>
+            <div className='tecnologias__container__tecnologia'>
+              <h3>Outras Tecnologias</h3>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>Git</span>
+                </div>
+                <img src='/assets/images/git.png' alt='icone git' id='git' />
               </div>
-
-              <img src='/assets/images/git.png' alt='icone git' id='git' />
-            </div>
-
-            <div className='tecnologia__reverse'>
-              <div className='linha__azul__reverse'>
-                <span>Docker</span>
+              <div className='tecnologia__reverse'>
+                <div className='linha__azul__reverse'>
+                  <span>Docker</span>
+                </div>
+                <img src='/assets/images/docker.png' alt='icone docker' id='docker' />
               </div>
-
-              <img src='/assets/images/docker.png' alt='icone docker' id='docker' />
-            </div>
-
-            <div className='tecnologia'>
-              <div className='linha__azul'>
-                <span>VS Code</span>
+              <div className='tecnologia'>
+                <div className='linha__azul'>
+                  <span>VS Code</span>
+                </div>
+                <img src='/assets/images/visual-studio.png' alt='icone vscode' id='vscode' />
               </div>
-              <img src='/assets/images/visual-studio.png' alt='icone vscode' id='vscode' />
-            </div>
-
-            <div className='tecnologia__reverse'>
-              <div className='linha__azul__reverse'>
-                <span>Wordpress</span>
+              <div className='tecnologia__reverse'>
+                <div className='linha__azul__reverse'>
+                  <span>Wordpress</span>
+                </div>
+                <img src='/assets/images/wordpress.png' alt='icone wordpress' id='wordpress' />
               </div>
-              <img src='/assets/images/wordpress.png' alt='icone wordpress' id='wordpress' />
             </div>
-          </div>
-        </styles.TechnologiesContainer>
+          </styles.TechnologiesContainer>
+        </Fade>
       </styles.Technologies>
 
       <styles.Sobre id='sobre'>
@@ -191,26 +170,29 @@ export default function Home() {
             <img src='/assets/images/profile-picture.jpg' alt='imagem erick balbino da silva' />
           </div>
 
-          <div className='text__container'>
-            <p>
-              Como disse acima, meu nome é Erick! Moro em Sobral-CE e sou um cara simples, simplesmente apaixonado por tecnologia e programação, atualmente sou um desenvolvedor front-end, mas devido aos meus esforços em busca de conhecimento, estou me tornando um desenvolvedor full-stack. No início não foi fácil, mas olhar para trás e ver tudo que eu já aprendi só me motiva mais ainda a sempre continuar evoluindo <span id='underline'>_</span>
-            </p>
-          </div>
+          <Fade bottom top={1500}>
+            <div className='text__container'>
+              <p>
+                Me chamo Erick, moro em Sobral-CE e atualmente sou desenvolvedor Front-End, tudo começou aos 15 anos, quando conheci minha primeira linguagem de programação Pascal, não foi amor a primeira vista, longe disso, mas todos aqueles comandos e erros seguidos de estresse me intrigaram e me fizeram ser quem eu sou hoje, um cara apaixonado por tecnologia e programação. <span id='underline'>_</span>
+              </p>
+            </div>
+          </Fade>
         </styles.SobreContainer>
       </styles.Sobre>
 
       <styles.Curriculo id='curriculo'>
         <h1>Currículo</h1>
 
-        <styles.CurriculoContainer>
-          <a href='/assets/images/curriculo.pdf' download='curriculo.pdf' type='application/pdf' id='pdf'>
-            Abrir como PDF <FaFilePdf className='icon' />
-          </a>
-
-          <a href='/assets/images/curriculo.zip' download='curriculo.zip' type='application/zip' id='zip'>
-            Abrir como ZIP <FaFileArchive className='icon' />
-          </a>
-        </styles.CurriculoContainer>
+        <Fade>
+          <styles.CurriculoContainer>
+            <a href='/assets/images/curriculo.pdf' download='curriculo.pdf' type='application/pdf' id='pdf'>
+              Abrir como PDF <FaFilePdf className='icon' />
+            </a>
+            <a href='/assets/images/curriculo.zip' download='curriculo.zip' type='application/zip' id='zip'>
+              Abrir como ZIP <FaFileArchive className='icon' />
+            </a>
+          </styles.CurriculoContainer>
+        </Fade>
       </styles.Curriculo>
 
       <styles.FormContainer id='contato'>

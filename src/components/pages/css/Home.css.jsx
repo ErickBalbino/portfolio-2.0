@@ -20,6 +20,18 @@ export const Introduction = styled.div`
             align-items: center;
         }
     }
+
+    @media (max-height: 500px){
+        &{
+            height: auto;
+            padding: 150px 0px 80px 0px;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1150px){
+        height: auto;
+        padding: 150px 0 100px 0;
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -39,6 +51,11 @@ export const TextWrapper = styled.div`
         font-size: 3.5rem;
         font-weight: 500;
         padding-bottom: 20px;
+
+        @media (max-width: 768px) {
+            text-align: center;
+            font-size: 3rem;
+        }
     }
 
     p{
@@ -80,7 +97,21 @@ export const Image = styled.div`
 
             img{
                 width: 100%;
+
+                
             }
+        }
+    }
+
+    @media (max-height: 500px){
+        img{
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1150px){
+        img{
+            width: 100%;
         }
     }
 `
@@ -108,6 +139,14 @@ export const ProjectsWrapper = styled.div`
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-height: 500px){
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    @media (min-width: 769px) and (max-width: 1150px){
+        grid-template-columns: repeat(2, 1fr);
     }
 `
 
@@ -268,6 +307,11 @@ export const SobreContainer = styled.div`
         h3{
             font-weight: 400;
             font-size: 1.3rem;
+
+            @media (max-width: 768px) {
+                font-size: 1.2rem;
+                text-align: center;
+            }
         }
 
         img{
@@ -275,6 +319,10 @@ export const SobreContainer = styled.div`
             margin-top: 20px;
             border-radius: 10px;
 
+        }
+
+        @media (max-width: 768px) {
+            width: 95vw;
         }
     }
 
@@ -302,7 +350,21 @@ export const SobreContainer = styled.div`
                     opacity: 1;
                 }
             }
+
+            @media (max-width: 768px) {
+                padding: 40px 10px;
+            }
         }
+
+        @media (max-width: 768px) {
+            width: 95vw;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
     }
 `
 
@@ -334,6 +396,11 @@ export const CurriculoContainer = styled.div`
         .icon{
             margin: 0 10px;
             font-size: 1.4rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.05rem;
+            margin: 5px;
         }
     }
 
@@ -392,6 +459,10 @@ export const FormContainer = styled.div`
                     outline: transparent;
                     caret-color: #02C5DF;
                     color: #02C5DF;
+
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
                 }
 
                 input::placeholder,
@@ -434,6 +505,11 @@ export const FormContainer = styled.div`
                     }
                 }
             }
+
+            @media (max-width: 768px) {
+                width: 95vw;
+                padding: 50px 15px;
+            }
         }
 
         .formImagem__container{
@@ -443,6 +519,15 @@ export const FormContainer = styled.div`
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            height: auto;
         }
     }
 `
