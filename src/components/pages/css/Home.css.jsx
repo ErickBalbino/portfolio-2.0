@@ -150,6 +150,32 @@ export const ProjectsWrapper = styled.div`
     }
 `
 
+export const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+        background-color: #fff;
+        color: #000;
+        padding: 7px 30px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        font-size: 1.05rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: transparent;
+        transition: 0.2s ease-in-out background-color;
+
+        &:hover{
+            cursor: pointer;
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    }
+`
+
 export const Technologies = styled(Projects)`
     
 `
