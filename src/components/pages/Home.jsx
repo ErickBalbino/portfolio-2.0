@@ -302,12 +302,6 @@ export default function Home() {
             {/* INPUTS DE CONTROLE */}
             <input 
               type="hidden" 
-              name="_next" 
-              value="https://portfolio-2-0-taupe.vercel.app/feedback" 
-            />
-
-            <input 
-              type="hidden" 
               name="_subject" 
               value="Novo contato do portfólio!" 
             />
