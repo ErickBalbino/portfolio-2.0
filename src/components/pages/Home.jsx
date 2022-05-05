@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as styles from './css/Home.css.jsx'
 import { FaFilePdf, FaFileArchive } from 'react-icons/fa'
 import Fade from 'react-reveal/Fade'
@@ -7,6 +7,27 @@ import { HashLink } from 'react-router-hash-link'
 import ProjectCard from '../project/ProjectCard'
 
 export default function Home() {
+
+  {/* VALIDAÇÃO MASCARA EMAIL */}
+  const [isEmailValid, setIsEmailValid] = useState(true)
+
+  const emailRegex = /\S+@\S+\.\S+/
+
+  const validateEmail = (event) => {
+    const email = event.target.value
+
+    if (emailRegex.test(email)) {
+      setIsEmailValid(true)
+    } else {
+      setIsEmailValid(false)
+    }
+
+    if(email.length == ''){
+      setIsEmailValid(true)
+    }
+  }
+  {/* VALIDAÇÃO MASCARA EMAIL */}
+
   return (
     <styles.Container>
       <styles.Introduction>
@@ -247,6 +268,7 @@ export default function Home() {
                 name='nome'
                 id='nome'
                 placeholder='Insira seu nome'
+                required
               />
 
               <input
@@ -254,6 +276,11 @@ export default function Home() {
                 name='email'
                 id='email'
                 placeholder='Insira seu e-mail'
+                onChange={validateEmail}
+                style={
+                  !isEmailValid ? {border: '1px solid #750101'} : {border: '1px solid #5f84a4'}
+                }
+                required
               />
 
               <input
@@ -261,12 +288,14 @@ export default function Home() {
                 name='assunto'
                 id='assunto'
                 placeholder='Assunto da mensagem'
+                required
               />
 
               <textarea
                 name="messagem"
                 id="messagem"
                 placeholder='Digite a mensagem...'
+                required
               />
             </fieldset>
 
@@ -297,7 +326,11 @@ export default function Home() {
             {/* INPUTS DE CONTROLE */}
 
             <div className='button__container'>
-              <input type="submit" value="Enviar Mensagem" />
+              <input 
+                type="submit" 
+                value="Enviar Mensagem" 
+                style={!isEmailValid ? { pointerEvents: 'none', backgroundColor: '#5d5d5d'} : { pointerEvents: 'all' }}
+              />
             </div>
           </form>
 
