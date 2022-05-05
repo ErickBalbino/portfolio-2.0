@@ -278,7 +278,7 @@ export default function Home() {
                 placeholder='Insira seu e-mail'
                 onChange={validateEmail}
                 style={
-                  !isEmailValid ? {border: '1px solid #750101'} : {border: '1px solid #5f84a4'}
+                  !isEmailValid ? {border: '1px solid #750101'} : {}
                 }
                 required
               />
