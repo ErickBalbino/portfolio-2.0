@@ -261,7 +261,7 @@ export default function Home() {
 
       <styles.FormContainer id='contato'>
         <div className='formWrapper__container'>
-          <form action="https://formsubmit.co/eriickdeveloper@gmail.com" method='POST'>
+          <form action="https://formsubmit.co/308e7b02f3b9c1b2c1731a758243e366" method='POST'>
             <fieldset>
               <input
                 type="text"
