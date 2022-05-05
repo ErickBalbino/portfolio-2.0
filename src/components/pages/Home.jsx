@@ -240,7 +240,7 @@ export default function Home() {
 
       <styles.FormContainer id='contato'>
         <div className='formWrapper__container'>
-          <form action="">
+          <form action="https://formsubmit.co/eriickdeveloper@gmail.com" method='POST'>
             <fieldset>
               <input
                 type="text"
@@ -248,24 +248,53 @@ export default function Home() {
                 id='nome'
                 placeholder='Insira seu nome'
               />
+
               <input
                 type="email"
                 name='email'
                 id='email'
                 placeholder='Insira seu e-mail'
               />
+
               <input
                 type="text"
                 name='assunto'
                 id='assunto'
                 placeholder='Assunto da mensagem'
               />
+
               <textarea
                 name="messagem"
                 id="messagem"
                 placeholder='Digite a mensagem...'
               />
             </fieldset>
+
+            {/* INPUTS DE CONTROLE */}
+            <input 
+              type="hidden" 
+              name="_next" 
+              value="https://portfolio-2-0-taupe.vercel.app/feedback" 
+            />
+
+            <input 
+              type="hidden" 
+              name="_subject" 
+              value="Novo contato do portfólio!" 
+            />
+
+            <input 
+              type="hidden" 
+              name="_autoresponse" 
+              value="Sua mensagem foi enviada para Erick Balbino! Em breve irei responder ela." 
+            />
+
+            <input 
+              type="hidden" 
+              name="_template" 
+              value="box" 
+            />
+            {/* INPUTS DE CONTROLE */}
 
             <div className='button__container'>
               <input type="submit" value="Enviar Mensagem" />

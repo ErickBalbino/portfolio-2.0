@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer'
 
 import Home from './components/pages/Home'
 import Projects from './components/pages/Projects'
+import Thanks from './components/pages/Thanks'
 import NotFound from './components/pages/NotFound'
 
 export default function PageRoutes() {
@@ -16,6 +17,7 @@ export default function PageRoutes() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/feedback' element={<Thanks />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
 
