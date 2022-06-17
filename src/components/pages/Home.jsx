@@ -54,6 +54,24 @@ export default function Home() {
         <Fade right duration={1500}>
           <styles.ProjectsWrapper>
             <ProjectCard
+              srcImage='bloco-de-tarefas.png'
+              text='Bloco de tarefas desenvolvido com React JS'
+              link='https://todo-app-ts-mu.vercel.app/'
+            />
+
+            <ProjectCard
+              srcImage='reactmeals.png'
+              text='Sistema de um restaurante online desenvolvido com React JS'
+              link='https://food-order-app-six.vercel.app/'
+            />
+
+            <ProjectCard
+              srcImage='historiando.jpeg'
+              text='Site de história criado com HTML, CSS e JavaScript!'
+              link='https://erickbalbino.github.io/historiando'
+            />
+
+            <ProjectCard
               srcImage='jogo-da-velha.jpeg'
               text='Jogo da velha desenvolvido pela linguagem JavaScript!'
               link='https://erickbalbino.github.io/jogo-da-velha'
@@ -66,27 +84,9 @@ export default function Home() {
             />
 
             <ProjectCard
-              srcImage='historiando.jpeg'
-              text='Site de história criado com HTML, CSS e JavaScript!'
-              link='https://erickbalbino.github.io/historiando'
-            />
-
-            <ProjectCard
-              srcImage='adocao_pet.png'
-              text='Site e tela admin feito com HTML, CSS, BOOTSTRAP, JavaScript e PHP!'
-              link='https://grupo-marlove.000webhostapp.com/'
-            />
-
-            <ProjectCard
-              srcImage='bloco-de-tarefas.png'
-              text='Bloco de tarefas desenvolvido com React, HTML e CSS'
-              link='https://bloco-de-tarefas.vercel.app/'
-            />
-
-            <ProjectCard
-              srcImage='tesla-clone.png'
-              text='Clone da empresa Tesla desenvolvido com React e styled-components'
-              link='https://tesla-clone-six-gamma.vercel.app/'
+              srcImage='clone-360xart.png'
+              text='Clone da 360xart desenvolvido com React JS e styled-components'
+              link='https://clone-360xart.vercel.app/'
             />
           </styles.ProjectsWrapper>
         </Fade>
@@ -222,7 +222,7 @@ export default function Home() {
           <div className='image__container'>
             <h3>Já que chegou até aqui, deixa eu me apresentar!</h3>
 
-            <img src='/assets/images/profile-picture.jpg' alt='imagem erick balbino da silva' />
+            <img src='/assets/images/imagem-erick.jpeg' alt='imagem erick balbino da silva' />
           </div>
 
           <Fade bottom top={1500}>
@@ -241,7 +241,7 @@ export default function Home() {
         <Fade>
           <styles.CurriculoContainer>
             <a 
-              href='/assets/images/curriculo.pdf' download='curriculo.pdf' 
+              href='/assets/images/curriculo.pdf' download='curriculo_erick.pdf' 
               type='application/pdf' 
               id='pdf'
             >
@@ -249,7 +249,7 @@ export default function Home() {
             </a>
 
             <a 
-              href='/assets/images/curriculo.zip' download='curriculo.zip' 
+              href='/assets/images/curriculo.zip' download='curriculo_erick.zip' 
               type='application/zip' 
               id='zip'
             >

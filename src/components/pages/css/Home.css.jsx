@@ -341,7 +341,7 @@ export const SobreContainer = styled.div`
         }
 
         img{
-            width: 120px;
+            width: 150px;
             margin-top: 20px;
             border-radius: 10px;
 
