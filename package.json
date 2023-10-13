@@ -3,6 +3,9 @@
   "homepage": "https://portfolio-2-0-taupe.vercel.app/",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
