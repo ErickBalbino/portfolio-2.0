@@ -1,10 +1,8 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
 
-import PageRoutes from './PageRoutes'
+import Router from "./Router";
 
 export default function App() {
-  return (
-    <PageRoutes />
-  )
+  return <Router />;
 }
